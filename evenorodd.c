@@ -1,21 +1,26 @@
 #include<stdio.h>
 int main(){
 
+	int limit;
 	int a;
+	printf("Enter the Limit \n");
+	scanf("%d",&limit);
 
-	printf("Enter the Number \n");
-	scanf("%d",&a);
+	printf("\nEven number generation \n");
 
-	if(a%2==0)
+	for(a=2;a<=limit;a=a+2){
+		printf("\n%d",a);
+	}
 
-		printf("The Given number is even\n");
 
+	printf("\nOdd number generation \n");
 
-	else
+	for(a=1;a<=limit;a=a+2){
+		printf("\n%d",a);
+	}
 
-		printf("The given number is odd\n");
+	printf("\n");
 
-	
 
 	return 0;
 }
